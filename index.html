@@ -10,8 +10,8 @@
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
         .nav-link:hover { color: #60a5fa; transition: 0.3s; }
         .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; }
-        .skill-card { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; transition: 0.3s; }
-        .skill-card:hover { border-color: #60a5fa; background: rgba(30, 41, 59, 0.8); }
+        .card-style { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; transition: 0.3s; }
+        .card-style:hover { border-color: #60a5fa; background: rgba(30, 41, 59, 0.8); }
     </style>
 </head>
 <body class="selection:bg-blue-500/30">
@@ -36,12 +36,52 @@
             <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-white">Sébastien Grigore</h1>
             <div class="space-y-6 text-lg text-slate-400 leading-relaxed">
                 <p>
-                    Actuellement en <span class="text-blue-400 font-semibold">2e année de BUT Science des Données</span> à l'IUT Nice Côte d'Azur, je suis activement à la recherche d'un stage de 10 semaines. Mon stage idéal débuterait entre avril et juin dans le domaine de l'analyse ou de la science des données.
+                    Actuellement en <span class="text-blue-400 font-semibold">2e année de BUT Science des Données</span> à l'IUT Nice Côte d'Azur, je suis à la recherche d'un stage de 10 semaines débutant entre avril et juin dans le domaine de la data.
                 </p>
                 <p>
-                    Compétiteur dans l'âme, je joue aux <span class="text-white font-medium">échecs en club depuis mes 7 ans</span>. J'ai eu l'honneur de représenter Cannes Échecs au plus haut niveau national : Triple Champion départemental et régional en équipe, Double Vice-Champion de France scolaire, et plusieurs classements dans le Top 20 national individuel. Cette discipline m'a apporté une rigueur et une capacité d'analyse que j'applique quotidiennement dans mes projets Data.
+                    Passionné d'échecs depuis mes 7 ans, j'ai représenté Cannes Échecs à haut niveau : Triple Champion départemental et régional, Double Vice-Champion de France scolaire, et classé dans le Top 20 national individuel. Cette discipline m'a forgé une grande rigueur et une capacité d'analyse stratégique.
                 </p>
             </div>
         </section>
 
-        <section
+        <section id="competences" class="mb-32 scroll-mt-32">
+            <h2 class="text-3xl font-bold mb-10 section-title text-white">Compétences</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-style p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Langages de Programmation</h3>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">SQL</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">R</span>
+                    </div>
+                </div>
+                <div class="card-style p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Outils numériques</h3>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Power BI</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Excel</span>
+                    </div>
+                </div>
+                <div class="card-style p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Bases de données</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Visualisation</span>
+                    </div>
+                </div>
+                <div class="card-style p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Communication</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Travail en équipe</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Rigueur</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours" class="mb-32 scroll-mt-32">
+            <h2 class="text-3xl font-bold mb-10 section-title text-white">Parcours</h2>
+            <div class="space-y-8">
+                <div class="card-style p-6 rounded-2xl">
+                    <span class="text-blue-400 text-sm font-bold">202
