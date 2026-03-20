@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sébastien | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .card:hover { transform: translateY(-5px); transition: all 0.3s; }
+    </style>
+</head>
+<body class="p-8 md:p-24">
+
+    <header class="max-w-4xl mx-auto mb-20">
+        <h1 class="text-4xl font-bold mb-2">Sébastien GR</h1>
+        <p class="text-blue-400 text-lg">Développeur & Passionné de Tech</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto mb-20">
+        <h2 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-gray-300">À propos</h2>
+        <p class="text-gray-400 leading-relaxed">
+            Bienvenue sur mon portfolio. Je réalise des projets axés sur [Tes Domaines, ex: le Web et l'IA]. 
+            Curieux et motivé, j'aime transformer des idées en solutions concrètes.
+        </p>
+    </section>
+
+    <section class="max-w-4xl mx-auto mb-20">
+        <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">Compétences</h2>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">HTML / CSS</span>
+            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">JavaScript</span>
+            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">Python</span>
+            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">Git</span>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto mb-20">
+        <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">Projets</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-bold mb-2">Mon Super Projet</h3>
+                <p class="text-gray-400 mb-4">Description rapide du projet et des technos utilisées.</p>
+                <a href="#" class="text-blue-400 hover:underline">Voir sur GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-4xl mx-auto text-center text-gray-500 pt-10 border-t border-gray-800">
+        <p>© 2026 Sébastien - Réalisé avec passion</p>
+    </footer>
+
+</body>
+</html>
