@@ -1,53 +1,107 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sébastien | Portfolio</title>
+    <title>Sébastien Grigore | Portfolio Data Science</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .card:hover { transform: translateY(-5px); transition: all 0.3s; }
+        .nav-link:hover { color: #60a5fa; transition: 0.3s; }
+        .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; }
+        .skill-card { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; }
     </style>
 </head>
-<body class="p-8 md:p-24">
+<body class="selection:bg-blue-500/30">
 
-    <header class="max-w-4xl mx-auto mb-20">
-        <h1 class="text-4xl font-bold mb-2">Sébastien GR</h1>
-        <p class="text-blue-400 text-lg">Développeur & Passionné de Tech</p>
-    </header>
-
-    <section class="max-w-4xl mx-auto mb-20">
-        <h2 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-gray-300">À propos</h2>
-        <p class="text-gray-400 leading-relaxed">
-            Bienvenue sur mon portfolio. Je réalise des projets axés sur [Tes Domaines, ex: le Web et l'IA]. 
-            Curieux et motivé, j'aime transformer des idées en solutions concrètes.
-        </p>
-    </section>
-
-    <section class="max-w-4xl mx-auto mb-20">
-        <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">Compétences</h2>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">HTML / CSS</span>
-            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">JavaScript</span>
-            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">Python</span>
-            <span class="bg-gray-800 px-4 py-2 rounded-full border border-gray-600">Git</span>
-        </div>
-    </section>
-
-    <section class="max-w-4xl mx-auto mb-20">
-        <h2 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-gray-300">Projets</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="card bg-gray-800 p-6 rounded-xl border border-gray-700">
-                <h3 class="text-xl font-bold mb-2">Mon Super Projet</h3>
-                <p class="text-gray-400 mb-4">Description rapide du projet et des technos utilisées.</p>
-                <a href="#" class="text-blue-400 hover:underline">Voir sur GitHub →</a>
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tighter">SG.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#presentation" class="nav-link">Présentation</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#parcours" class="nav-link">Parcours</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#hobbys" class="nav-link">Hobbys</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <footer class="max-w-4xl mx-auto text-center text-gray-500 pt-10 border-t border-gray-800">
-        <p>© 2026 Sébastien - Réalisé avec passion</p>
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-20">
+        
+        <section id="presentation" class="mb-24 scroll-mt-32">
+            <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-white">Sébastien Grigore</h1>
+            <div class="space-y-6 text-lg text-slate-400 leading-relaxed">
+                <p>
+                    Je suis actuellement en 2e année de <span class="text-blue-400 font-semibold">BUT Science des Données</span> à l'IUT Nice Côte d'Azur[cite: 7, 13]. 
+                    Je suis à la recherche d'un stage de 10 semaines débutant entre Avril et Juin dans le domaine de la data[cite: 7].
+                </p>
+                <p>
+                    Passionné par la stratégie, je joue aux <span class="text-white font-medium">échecs en club depuis mes 7 ans</span>[cite: 41]. 
+                    J'ai représenté Cannes Échecs à haut niveau national : Triple Champion départemental (06) et régional (PACA) en équipe, 
+                    Double Vice-Champion de France scolaire, et classé dans le Top 20 national individuel lors de mes participations aux Championnats de France[cite: 50].
+                </p>
+            </div>
+        </section>
+
+        <section id="competences" class="mb-24 scroll-mt-32">
+            <h2 class="text-3xl font-bold mb-10 section-title text-white">Compétences</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="skill-card p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Langages de Programmation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">R</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">SQL</span> 
+                    </div>
+                </div>
+
+                <div class="skill-card p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Outils numériques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Power BI</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Excel</span> [cite: 21, 26]
+                    </div>
+                </div>
+
+                <div class="skill-card p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Gestion de bases de données</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Analyse de données</span> [cite: 10, 24]
+                    </div>
+                </div>
+
+                <div class="skill-card p-6 rounded-2xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Communication</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Travail en équipe</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Capacité d'adaptation</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Rigueur</span> [cite: 15, 16, 17, 20]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours" class="mb-24 scroll-mt-32 opacity-50">
+            <h2 class="text-3xl font-bold mb-10 section-title text-white">Parcours</h2>
+            <p>À venir...</p>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4 text-white">Me contacter</h2>
+            <p class="text-slate-400 mb-6">Disponible pour discuter de projets Data.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:grigoresebastien@gmail.com" class="text-blue-400 hover:underline">Email</a> [cite: 3]
+            </div>
+        </div>
     </footer>
 
 </body>
