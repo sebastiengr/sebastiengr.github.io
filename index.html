@@ -10,99 +10,38 @@
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
         .nav-link:hover { color: #60a5fa; transition: 0.3s; }
         .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; }
-        .skill-card { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; }
+        .skill-card { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; transition: 0.3s; }
+        .skill-card:hover { border-color: #60a5fa; background: rgba(30, 41, 59, 0.8); }
     </style>
 </head>
 <body class="selection:bg-blue-500/30">
 
     <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold text-xl tracking-tighter">SG.</span>
+            <span class="font-bold text-xl tracking-tighter text-white">SG.</span>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#presentation" class="nav-link">Présentation</a>
                 <a href="#competences" class="nav-link">Compétences</a>
                 <a href="#parcours" class="nav-link">Parcours</a>
                 <a href="#projets" class="nav-link">Projets</a>
                 <a href="#hobbys" class="nav-link">Hobbys</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link text-blue-400">Contact</a>
             </div>
         </div>
     </nav>
 
     <main class="max-w-4xl mx-auto px-6 pt-32 pb-20">
         
-        <section id="presentation" class="mb-24 scroll-mt-32">
+        <section id="presentation" class="mb-32 scroll-mt-32">
             <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-white">Sébastien Grigore</h1>
             <div class="space-y-6 text-lg text-slate-400 leading-relaxed">
                 <p>
-                    Je suis actuellement en 2e année de <span class="text-blue-400 font-semibold">BUT Science des Données</span> à l'IUT Nice Côte d'Azur[cite: 7, 13]. 
-                    Je suis à la recherche d'un stage de 10 semaines débutant entre Avril et Juin dans le domaine de la data[cite: 7].
+                    Actuellement en <span class="text-blue-400 font-semibold">2e année de BUT Science des Données</span> à l'IUT Nice Côte d'Azur, je suis activement à la recherche d'un stage de 10 semaines. Mon stage idéal débuterait entre avril et juin dans le domaine de l'analyse ou de la science des données.
                 </p>
                 <p>
-                    Passionné par la stratégie, je joue aux <span class="text-white font-medium">échecs en club depuis mes 7 ans</span>[cite: 41]. 
-                    J'ai représenté Cannes Échecs à haut niveau national : Triple Champion départemental (06) et régional (PACA) en équipe, 
-                    Double Vice-Champion de France scolaire, et classé dans le Top 20 national individuel lors de mes participations aux Championnats de France[cite: 50].
+                    Compétiteur dans l'âme, je joue aux <span class="text-white font-medium">échecs en club depuis mes 7 ans</span>. J'ai eu l'honneur de représenter Cannes Échecs au plus haut niveau national : Triple Champion départemental et régional en équipe, Double Vice-Champion de France scolaire, et plusieurs classements dans le Top 20 national individuel. Cette discipline m'a apporté une rigueur et une capacité d'analyse que j'applique quotidiennement dans mes projets Data.
                 </p>
             </div>
         </section>
 
-        <section id="competences" class="mb-24 scroll-mt-32">
-            <h2 class="text-3xl font-bold mb-10 section-title text-white">Compétences</h2>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="skill-card p-6 rounded-2xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Langages de Programmation</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">R</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">SQL</span> 
-                    </div>
-                </div>
-
-                <div class="skill-card p-6 rounded-2xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Outils numériques</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Power BI</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Excel</span> [cite: 21, 26]
-                    </div>
-                </div>
-
-                <div class="skill-card p-6 rounded-2xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Data Engineering</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Gestion de bases de données</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Analyse de données</span> [cite: 10, 24]
-                    </div>
-                </div>
-
-                <div class="skill-card p-6 rounded-2xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Soft Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Communication</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Travail en équipe</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Capacité d'adaptation</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-sm border border-slate-700">Rigueur</span> [cite: 15, 16, 17, 20]
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="parcours" class="mb-24 scroll-mt-32 opacity-50">
-            <h2 class="text-3xl font-bold mb-10 section-title text-white">Parcours</h2>
-            <p>À venir...</p>
-        </section>
-
-    </main>
-
-    <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-12 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4 text-white">Me contacter</h2>
-            <p class="text-slate-400 mb-6">Disponible pour discuter de projets Data.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="mailto:grigoresebastien@gmail.com" class="text-blue-400 hover:underline">Email</a> [cite: 3]
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+        <section
