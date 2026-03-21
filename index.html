@@ -10,10 +10,8 @@
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
         .nav-link:hover { color: #60a5fa; transition: 0.3s; }
         .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; }
-        .card-style { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; transition: 0.3s; overflow: hidden; }
+        .card-style { background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; transition: 0.3s; }
         .card-style:hover { border-color: #60a5fa; background: rgba(30, 41, 59, 0.8); transform: translateY(-2px); }
-        .project-img { height: 200px; width: 100%; object-cover: cover; opacity: 0.7; transition: 0.5s; }
-        .card-style:hover .project-img { opacity: 1; scale: 1.05; }
     </style>
 </head>
 <body class="selection:bg-blue-500/30">
@@ -34,43 +32,72 @@
 
     <main class="max-w-4xl mx-auto px-6 pt-32 pb-20">
         
-        <section id="presentation" class="mb-32 scroll-mt-32 flex flex-col md:flex-row items-center gap-10">
-            <div class="flex-1 text-center md:text-left">
-                <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-white">Sébastien Grigore</h1>
-                <div class="space-y-6 text-lg text-slate-400 leading-relaxed">
-                    <p>
-                        Actuellement en <span class="text-blue-400 font-semibold">2e année de BUT Science des Données</span> à l'IUT Nice Côte d'Azur. Je recherche un stage de 10 semaines (Avril-Juillet) dans la data.
-                    </p>
-                    <p>
-                        Joueur d'échecs de haut niveau, j'allie la stratégie du jeu à la rigueur de l'analyse de données.
-                    </p>
-                </div>
+        <section id="presentation" class="mb-32 scroll-mt-32">
+            <div class="mb-8">
+                <img src="photo-profil.jpg" alt="Sébastien Grigore" class="w-40 h-40 rounded-2xl object-cover border-2 border-blue-500 shadow-2xl">
             </div>
-            <div class="shrink-0">
-                <img src="photo-profil.jpg" alt="Sébastien Grigore" 
-                     class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover border-2 border-slate-700 shadow-2xl grayscale hover:grayscale-0 transition duration-500">
-                </div>
+            
+            <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-white">Sébastien Grigore</h1>
+            <div class="space-y-6 text-lg text-slate-400 leading-relaxed">
+                <p>
+                    Actuellement en <span class="text-blue-400 font-semibold">2e année de BUT Science des Données</span> à l'IUT Nice Côte d'Azur. Je suis à la recherche d'un stage de 10 semaines débutant entre Avril et Juillet dans le domaine de la data.
+                </p>
+                <p>
+                    Curieux et rigoureux, je développe des compétences solides en analyse de données et programmation. En dehors de mes études, mon parcours est marqué par un engagement de haut niveau dans le milieu associatif et sportif.
+                </p>
+            </div>
         </section>
 
         <section id="competences" class="mb-32 scroll-mt-32">
             <h2 class="text-3xl font-bold mb-10 section-title text-white">Compétences</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="card-style p-6 rounded-2xl shadow-xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Langages</h3>
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Langages de Programmation</h3>
                     <div class="flex flex-wrap gap-2 text-sm text-slate-300">
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">SQL</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">R</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">DAX</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">SQL</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">R</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">DAX</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">VBA</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">JAVA</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">PowerShell</span>
                     </div>
                 </div>
+
                 <div class="card-style p-6 rounded-2xl shadow-xl">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Outils</h3>
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Outils numériques</h3>
                     <div class="flex flex-wrap gap-2 text-sm text-slate-300">
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Power BI</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Excel</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Pentaho</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">VS Code</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Power BI</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Excel</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Canva</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">GoogleSlide</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">VisualStudioCode</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Eclipse</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">R Studio</span>
+                    </div>
+                </div>
+
+                <div class="card-style p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2 text-sm text-slate-300">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Extraction de données (Web Scraping, ETL)</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Data warehouse</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Pentaho Spoon</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Visualisation de données (Power BI, Matplotlib)</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Analyse de données (Statistiques, Machine Learning)</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Modélisation de bases de données (MCD, MLD, schémas relationnels)</span>
+                    </div>
+                </div>
+
+                <div class="card-style p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2 text-sm text-slate-300">
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Communication</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Travail en équipe</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Capacité d'adaptation</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">À l'écoute</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Rigueur</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700 font-medium">Capacité de calcul</span>
                     </div>
                 </div>
             </div>
@@ -78,52 +105,62 @@
 
         <section id="parcours" class="mb-32 scroll-mt-32">
             <h2 class="text-3xl font-bold mb-10 section-title text-white">Parcours</h2>
-            <div class="space-y-6">
-                <div class="card-style p-6 rounded-2xl border-l-4 border-l-blue-500">
+            <div class="space-y-8">
+                <div class="card-style p-6 rounded-2xl">
                     <span class="text-blue-400 text-sm font-bold">2024 — 2026</span>
                     <h3 class="text-xl font-bold text-white uppercase">BUT Science des données</h3>
-                    <p class="text-slate-400">IUT Nice Côte d'Azur, Sophia Antipolis</p>
+                    <p class="text-slate-400 font-medium">IUT Nice Côte d'Azur, Sophia Antipolis</p>
+                </div>
+                <div class="card-style p-6 rounded-2xl border-l-4 border-l-blue-500">
+                    <span class="text-blue-400 text-sm font-bold">Juillet 2023</span>
+                    <h3 class="text-xl font-bold text-white uppercase">Commis de bar</h3>
+                    <p class="text-slate-400 font-medium">La Môme, Cannes</p>
+                    <p class="text-slate-500 text-sm mt-2 font-light">Gestion des stocks, des couverts et aide au service en restauration.</p>
                 </div>
                 <div class="card-style p-6 rounded-2xl">
-                    <span class="text-blue-400 text-sm font-bold">Juillet 2023</span>
-                    <h3 class="text-xl font-bold text-white uppercase">Commis de bar - La Môme</h3>
-                    <p class="text-slate-500 text-sm">Gestion des stocks et rigueur opérationnelle en milieu exigeant.</p>
+                    <span class="text-blue-400 text-sm font-bold">2021</span>
+                    <h3 class="text-xl font-bold text-white uppercase">Stage Professeur d'Échecs</h3>
+                    <p class="text-slate-400 font-medium">Association Cannes Échecs</p>
+                    <p class="text-slate-500 text-sm mt-2 font-light">Initiation en milieu scolaire, arbitrage de tournois et aide à l'organisation.</p>
                 </div>
             </div>
         </section>
 
         <section id="projets" class="mb-32 scroll-mt-32">
             <h2 class="text-3xl font-bold mb-10 section-title text-white">Projets</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-style rounded-2xl group">
-                    <img src="projet-ratp.jpg" alt="Gestion RATP" class="project-img">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Gestion RATP</h3>
-                        <p class="text-slate-400 text-sm mb-4">Modélisation et création d'une base SQL complète.</p>
-                        <span class="text-[10px] font-bold text-blue-400 border border-blue-400/30 px-2 py-0.5 rounded uppercase">SQL / Modélisation</span>
-                    </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-style p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Gestion RATP</h3>
+                    <p class="text-slate-400 text-sm mb-4">Création d'une base de données relationnelle dédiée à la gestion du réseau RATP.</p>
+                    <span class="text-[10px] font-bold text-blue-400 border border-blue-400/30 px-2 py-0.5 rounded uppercase">SQL</span>
                 </div>
-                <div class="card-style rounded-2xl group">
-                    <img src="projet-mal.jpg" alt="Analyse MyAnimeList" class="project-img">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Analyse MyAnimeList</h3>
-                        <p class="text-slate-400 text-sm mb-4">Dashboard interactif Power BI sur les tendances mondiales.</p>
-                        <span class="text-[10px] font-bold text-blue-400 border border-blue-400/30 px-2 py-0.5 rounded uppercase">Power BI / Data Viz</span>
-                    </div>
+                <div class="card-style p-6 rounded-2xl shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Analyse MyAnimeList</h3>
+                    <p class="text-slate-400 text-sm mb-4">Analyse exploratoire et création d'un rapport BI illustrant les tendances des animés.</p>
+                    <span class="text-[10px] font-bold text-blue-400 border border-blue-400/30 px-2 py-0.5 rounded uppercase">Power BI</span>
                 </div>
             </div>
         </section>
 
         <section id="hobbies" class="mb-32 scroll-mt-32">
             <h2 class="text-3xl font-bold mb-10 section-title text-white">Hobbies</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="card-style p-6 rounded-2xl md:col-span-3 border-l-4 border-l-blue-500">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-style p-6 rounded-2xl md:col-span-2 border-l-4 border-l-blue-500 shadow-xl">
                     <h3 class="text-xl font-bold text-white mb-4 uppercase">Échecs (Compétition)</h3>
-                    <p class="text-slate-400 text-sm mb-4">Multiple champion départemental et Top 20 national. Maîtrise de la stratégie et de la gestion du stress.</p>
+                    <div class="text-slate-400 text-sm leading-relaxed space-y-3">
+                        <p>Joueur en club depuis mes 7 ans chez <span class="text-white font-medium">Cannes Échecs</span>.</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>Triple Champion départemental (06) et régional (PACA) en équipe scolaire.</li>
+                            <li>Double Vice-Champion de France en équipe des collèges.</li>
+                            <li>Double Champion individuel des Alpes-Maritimes.</li>
+                            <li>Top 21 (Benjamin) et Top 17 (Minime) aux Championnats de France individuels.</li>
+                            <li>Participation aux ligues nationales avec la 2e meilleure équipe adulte du club.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="card-style p-4 rounded-xl text-center text-slate-300 font-medium">Football</div>
                 <div class="card-style p-4 rounded-xl text-center text-slate-300 font-medium">Jeux Vidéos</div>
-                <div class="card-style p-4 rounded-xl text-center text-slate-300 font-medium">Création de contenu</div>
+                <div class="card-style p-4 rounded-xl text-center text-slate-300 font-medium md:col-span-2">Création de contenu</div>
             </div>
         </section>
 
@@ -131,11 +168,11 @@
 
     <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-16 px-6 text-center">
         <h2 class="text-3xl font-bold mb-6 text-white tracking-tight">Contact</h2>
-        <div class="space-y-2 mb-8 text-slate-400">
-            <p>grigoresebastien@gmail.com</p>
-            <p>06 22 95 20 24</p>
+        <div class="space-y-2 mb-8">
+            <p class="text-slate-400">grigoresebastien@gmail.com</p>
+            <p class="text-slate-400">06 22 95 20 24</p>
         </div>
-        <a href="mailto:grigoresebastien@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold transition shadow-lg shadow-blue-500/20">Me contacter</a>
+        <a href="mailto:grigoresebastien@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg shadow-blue-500/20 text-sm">Envoyer un mail</a>
     </footer>
 
 </body>
